@@ -1,0 +1,160 @@
+/* MAKE EVERYTHING LOOK NICE */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* BG TRANSITIONS */
+@-webkit-keyframes changeBg {
+  0%    {background-image: url("../images/geometric0.png");}
+  50%   {background-image: url("../images/geometric2.png");}
+  100%  {background-image: url("../images/geometric3.png");}
+}
+
+/* ANIMATE BG ONCE + SET DEFAULT BG */
+body {
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: changeBg 5s 1;
+  background-image: url("../images/geometric3.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(61, 146, 201);
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+table {
+  background-color: rgba(255, 255, 255, .85);
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-family: Georgia, "Cambria", serif;
+  font-size: 0.72em;
+  /* ADDED SPACE BETWEEN TABLE AND WHITE BORDER */
+  margin-top: 27px;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+/*******************************************************/
+/* PRIMARILY DEALS WITH CONTENT LAYOUT CSS             */
+/*******************************************************/
+.pure-img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+#layout {
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  top: auto;
+  margin: 3em auto;
+}
+
+/* SIDEBAR + BUTTONS */
+.sidebar {
+  background: rgba(61, 79, 93, .7);
+  color: #fff;
+}
+
+.brand-title, .brand-tagline {
+  font-family: "Trirong", serif;
+  margin: 0;
+}
+
+.brand-title {
+  font-size: 2.6em;
+}
+
+.brand-tagline {
+  font-weight: 300;
+  color: #fff;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.nav-item a {
+  background: black;
+  color: #fff;
+  margin-top: 1em;
+  letter-spacing: 0.05em;
+  font-size: 85%;
+}
+
+.nav-item a:hover, .nav-item a:focus {
+  background: white;
+  color: #333;
+  border: 2px solid white;
+  text-decoration: none;
+}
+
+.content-subhead {
+  color: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 0.4em 0;
+  font-size: 80%;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.content {
+  padding: 2em 1em 0;
+}
+
+.post {
+  padding-bottom: 2em;
+}
+
+.post-title {
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 0.2em;
+}
+
+.post-description {
+  font-family: Georgia, "Cambria", serif;
+  font-size: 1.2em;
+  color: #111;
+  line-height: 1.8em;
+}
+
+/* FOR MOBILE DEVICES */
+@media (min-width: 48em) {
+  .content {
+    padding: 2em 3em 0;
+    margin-left: 25%;
+  }
+
+  .header {
+    margin: 80% 2em 0;
+    text-align: right;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+  }
+}
