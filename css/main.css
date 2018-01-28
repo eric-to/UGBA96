@@ -1,24 +1,11 @@
-/* MAKE EVERYTHING LOOK NICE */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* BG TRANSITIONS */
-@-webkit-keyframes changeBg {
-  0%    {background-image: url("../images/geometric0.png");}
-  50%   {background-image: url("../images/geometric2.png");}
-  100%  {background-image: url("../images/geometric3.png");}
-}
-
-/* ANIMATE BG ONCE + SET DEFAULT BG */
 body {
-  -webkit-transform-style: preserve-3d;
-  -webkit-animation: changeBg 5s 1;
-  background-image: url("../images/geometric3.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: orange;
 }
 
 a {
@@ -31,13 +18,12 @@ a:hover, a:focus {
 }
 
 table {
-  background-color: rgba(255, 255, 255, .85);
+  background-color: rgba(255, 255, 255, .6);
   border-collapse: collapse;
   border: 2px solid rgb(200, 200, 200);
   letter-spacing: 1px;
   font-family: Georgia, "Cambria", serif;
   font-size: 0.72em;
-  /* ADDED SPACE BETWEEN TABLE AND WHITE BORDER */
   margin-top: 27px;
 }
 
@@ -46,7 +32,7 @@ td, th {
   padding: 10px 20px;
 }
 /*******************************************************/
-/* PRIMARILY DEALS WITH CONTENT LAYOUT CSS             */
+/* LAYOUT CSS                                          */
 /*******************************************************/
 .pure-img-responsive {
   max-width: 100%;
@@ -63,7 +49,6 @@ td, th {
   margin: 3em auto;
 }
 
-/* SIDEBAR + BUTTONS */
 .sidebar {
   background: rgba(61, 79, 93, .7);
   color: #fff;
@@ -80,7 +65,6 @@ td, th {
 
 .brand-tagline {
   font-weight: 300;
-  color: #fff;
 }
 
 .nav-list {
@@ -96,7 +80,7 @@ td, th {
 }
 
 .nav-item a {
-  background: black;
+  background: rgb(51, 51, 51);
   color: #fff;
   margin-top: 1em;
   letter-spacing: 0.05em;
@@ -111,7 +95,7 @@ td, th {
 }
 
 .content-subhead {
-  color: #fff;
+  color: rgb(153, 102, 0);
   border-bottom: 1px solid #eee;
   padding: 0.4em 0;
   font-size: 80%;
@@ -136,11 +120,10 @@ td, th {
 .post-description {
   font-family: Georgia, "Cambria", serif;
   font-size: 1.2em;
-  color: #111;
+  color: rgb(51, 34, 0);
   line-height: 1.8em;
 }
 
-/* FOR MOBILE DEVICES */
 @media (min-width: 48em) {
   .content {
     padding: 2em 3em 0;
