@@ -142,6 +142,10 @@ td, th {
 
 /* FOR MOBILE DEVICES */
 @media (min-width: 48em) {
+  body {
+    background-image:;
+  }
+
   .content {
     padding: 2em 3em 0;
     margin-left: 25%;
