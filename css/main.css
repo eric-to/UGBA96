@@ -124,6 +124,10 @@ td, th {
   line-height: 1.8em;
 }
 
+.joke {
+  margin-top: 15px;
+}
+
 @media (min-width: 48em) {
   .content {
     padding: 2em 3em 0;
